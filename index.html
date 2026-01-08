@@ -3,85 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All about dogs!</title>
+  <title>All About Dogs</title>
+
+  <!-- Google Font for better design -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
     h1 {
-      font-size: 2.5em;
-      border-bottom: 3px solid #3498db;
-      padding-bottom: 10px;
+      font-size: 3em;
+      border-bottom: 4px solid #3498db;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
     }
 
-    h2 {
-      font-size: 1.8em;
-      margin-top: 20px;
-      color: #34495e;
+    h2, h3, h4 {
+      margin-top: 25px;
+      margin-bottom: 15px;
     }
 
-    h3 {
-      font-size: 1.4em;
-      color: #7f8c8d;
-    }
-
-    h4 {
-      font-size: 1.2em;
-      color: #95a5a6;
-    }
+    h2 { font-size: 2em; color: #34495e; }
+    h3 { font-size: 1.6em; color: #7f8c8d; }
+    h4 { font-size: 1.3em; color: #95a5a6; }
 
     p {
-      color: #555;
       margin-bottom: 15px;
     }
 
     blockquote {
-      color: pink;
-      margin-bottom: 15px;
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 5px solid #3498db;
+      background-color: #eaf2f8;
+      border-radius: 5px;
     }
 
     img {
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
     }
 
     ul {
       background-color: #e7f3fe;
-      padding: 15px;
-      border-radius: 5px;
+      padding: 20px 25px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      list-style-type: square;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       color: #2980b9;
+    }
+
+    /* Smooth scrolling (nice touch for one-page) */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      h2 { font-size: 1.6em; }
+      h3 { font-size: 1.3em; }
+      h4 { font-size: 1.1em; }
+      .container { padding: 20px 15px; }
     }
   </style>
 </head>
 
 <body>
-  <h1>All about dogs!</h1>
+  <div class="container">
+    <h1>All About Dogs</h1>
 
-  <p>Dogs descended from grey wolves, which prehistoric humans learned to domesticate.</p>
+    <p>
+      Dogs descended from grey wolves, which prehistoric humans gradually learned
+      to domesticate over thousands of years. They are loyal companions to humans
+      and have played important roles in human history.
+    </p>
 
-  <h2>All about dogs, an introduction!</h2>
+    <h2>An Introduction</h2>
 
-  <p>Dogs are known for their loyalty and companionship to humans.</p>
+    <p>
+      Dogs have been bred for hunting, herding, guarding, and assisting people
+      with disabilities. Their loyalty and intelligence make them unique.
+    </p>
 
-  <blockquote>
-    "A dog is the only thing on earth that loves you more than he loves himself."
-  </blockquote>
+    <blockquote>
+      “A dog is the only thing on earth that loves you more than he loves himself.”
+      — Josh Billings
+    </blockquote>
 
-  <h3>Different breeds of dogs</h3>
+    <h3>Different Breeds of Dogs</h3>
 
-  <p>There are hundreds of dog breeds.</p>
+    <p>
+      There are hundreds of dog breeds, ranging from tiny Chihuahuas to large
+      Great Danes. Each breed has its own temperament, size, and abilities.
+    </p>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
-       alt="A cute golden retriever puppy" width="300">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
+      alt="A golden retriever puppy sitting on grass"
+    >
 
-  <h4>Fun facts about dogs</h4>
+    <p>
+      Dogs communicate using vocalizations, body language, and facial expressions.
+      They have incredible senses, particularly smell, which humans cannot match.
+    </p>
 
-  <ul>
-    <li>Dogs were domesticated over 15,000 years ago.</li>
-    <li>Basenjis don't bark.</li>
-    <li>Dogs have an incredible sense of smell.</li>
-  </ul>
+    <h4>Fun Facts About Dogs</h4>
+
+    <ul>
+      <li>Dogs were domesticated over 15,000 years ago.</li>
+      <li>The Basenji is known as the “barkless dog” because it yodels instead of barking.</li>
+      <li>A dog’s sense of smell can be up to 100,000 times stronger than a human’s.</li>
+      <li>Dogs can learn hundreds of commands and tricks with proper training.</li>
+    </ul>
+
+    <p>
+      Overall, dogs are beloved companions that bring joy and comfort to millions
+      of people worldwide. They are playful, protective, and endlessly loyal.
+    </p>
+  </div>
 </body>
 </html>
